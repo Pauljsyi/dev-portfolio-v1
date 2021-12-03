@@ -18,7 +18,7 @@ const Header = () => {
 
         <div className="link-container">
           <li className="navlinks">
-            <a className="links" href="/#">
+            <a className="links" href="#featured">
               .projects
               <hr />
             </a>

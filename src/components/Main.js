@@ -11,6 +11,16 @@ const Main = () => {
           <p id="brief">.a full-stack web developer.</p>
         </div>
       </div>
+      <div className="arrow-container">
+        <div id="section06">
+          <a href="#featured">
+            <span></span>
+          </a>
+        </div>
+        {/* <a id="featured-link" href="#featured">
+          <p>FEATURED</p>
+        </a> */}
+      </div>
     </main>
   );
 };
