@@ -105,6 +105,19 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "ClementePDac-ExtraLight";
+  src: url("./assets/webfonts_ClementePDac-ExtraLight/ClementePDac-ExtraLight.ttf.woff")
+      format("woff"),
+    url("./assets/webfonts_ClementePDac-ExtraLight/ClementePDac-ExtraLight.ttf.svg#ClementePDac-ExtraLight")
+      format("svg"),
+    url("./assets/webfonts_ClementePDac-ExtraLight/ClementePDac-ExtraLight.ttf.eot"),
+    url("./assets/webfonts_ClementePDac-ExtraLight/ClementePDac-ExtraLight.ttf.eot?#iefix")
+      format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* @font-face {
   font-family: "code_pro-trialnormal";
   src: url("./assets/webfontkit1/codepro-trial-normal-webfont.woff2")
@@ -159,20 +172,22 @@
 
 html {
   background-color: rgba(0, 0, 0, 1);
-  width: 100%;
+  /* width: 1400px; */
   font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
-  height: 1000px;
+  /* height: 1000px; */
   scroll-behavior: smooth;
+  margin: auto;
 }
 
 body {
-  background: rgb(0, 0, 0);
-  position: absolute;
+  /* background: rgba(0, 0, 0, 0.1); */
+  /* position: absolute; */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 100%;
-  height: 1000px;
+  /* left: 25%; */
+  /* width: 100%; */
+  /* height: 1000px;s */
   margin: auto;
   z-index: 0;
 }
@@ -184,7 +199,7 @@ body {
 }
 
 nav {
-  width: 100%;
+  /* width: 100%; */
   margin: auto;
   display: flex;
   align-items: center;
@@ -212,18 +227,14 @@ nav {
 }
 
 .link-container {
-  /* border: 10px solid black;s */
-  /* display: flex; */
-  /* background: rgba(255, 255, 255, 0.3); */
-  /* border: solid 8px black; */
   border-right: 0;
   background-color: white;
-  height: 100px;
+  height: 105px;
   width: 250px;
   position: absolute;
   top: 50px;
   right: 0;
-  border-radius: 100px 0px 0px 100px;
+  /* border-radius: 10px 0px 0px 100px; */
 
   align-items: center;
   animation: move-to-the-left 1000ms;
@@ -264,22 +275,7 @@ nav {
 .navlinks a,
 .social-nav a {
   text-decoration: none;
-  /* font-family: "archivo_blackregular"; */
-  /* font-family: "code_pro-trialbold_lc"; */
-  /* font-family: "tondubeta"; */
-  /* font-family: "michromaregular"; */
-  /* font-family: "cooper_hewittthin_italic"; */
-  /* font-family: "cooper_hewittheavy"; */
-  /* font-family: "arconregular"; */
-  /* font-family: "baron_neueregular"; */
-  /* font-family: "blogger_sanslight"; */
-  /* font-family: "blogger_sansmedium"; */
-  /* font-family: "camptonlight_demo"; */
   font-family: "code_next-trialbook";
-  /* font-family: "code_pro-trialnormal"; */
-  /* font-family: "code_pro-trialnormal_lc"; */
-  /* font-family: "cooper_hewittbook"; */
-  /* font-family: "dual300"; */
   color: black;
   font-size: large;
 }
@@ -314,6 +310,7 @@ main {
   min-height: 1100px;
   height: 700px;
   display: flex;
+  /* background: rgba(0, 0, 0, 0.1); */
   /* border: 10px solid black; */
   /* background-image: url("./assets/starry-sky-rocks-nostars.png");
   background-position: center;
@@ -331,10 +328,11 @@ main {
 }
 
 .circle {
+  position: absolute;
   width: 250px;
   height: 250px;
   margin: -40px 0px 0px -50px;
-  position: absolute;
+
   border: 10px solid white;
   color: white;
   border-radius: 1000px;
@@ -360,7 +358,7 @@ main {
   font-size: 50px;
   margin: 0;
   width: 270px;
-  z-index: 1;
+  z-index: 2;
   cursor: default;
 }
 
@@ -387,10 +385,13 @@ main {
   width: 350px;
 }
 
-#section06 a span {
+#down a span {
+  /* border-right: 10px solid gray;
+  border-top: 1px solid white; */
   position: absolute;
-  bottom: 12%;
+  /* bottom: 50px; */
   left: 50%;
+  top: 850px;
 
   width: 24px;
   height: 24px;
@@ -399,8 +400,8 @@ main {
   border-bottom: 1px solid #fff;
   -webkit-transform: rotateZ(-45deg);
   transform: rotateZ(-45deg);
-  -webkit-animation: sdb06 1.5s infinite;
-  animation: sdb06 1.5s infinite;
+  -webkit-animation: down-arrow 0.5s infinite;
+  animation: down-arrow 2.5s infinite;
   box-sizing: border-box;
 }
 /* 
@@ -413,7 +414,7 @@ main {
   letter-spacing: 5px;
   margin-left: -12px;
 } */
-@-webkit-keyframes sdb06 {
+@-webkit-keyframes down-arrow {
   0% {
     -webkit-transform: rotateY(0) rotateZ(-45deg) translate(0, 0);
     opacity: 0;
@@ -426,7 +427,7 @@ main {
     opacity: 0;
   }
 }
-@keyframes sdb06 {
+@keyframes down-arrow {
   0% {
     transform: rotateY(0) rotateZ(-45deg) translate(0, 0);
     opacity: 0;
@@ -441,80 +442,100 @@ main {
 }
 
 section {
-  /* background: white; */
+  /* background: blue; */
   /* border: 5px solid red; */
-  font-family: "code_next-trialbook";
-  width: 90%;
+  /* font-family: "code_next-trialbook"; */
+  font-family: "ClementePDac-ExtraLight";
+  width: 100%;
   height: auto;
   margin: auto;
   display: grid;
+  max-width: 1200px;
 }
 
-section h1 {
-  position: absolute;
-  padding: 25px;
-  top: 95%;
-  left: 0;
+#featured {
+  margin-left: 58px;
+}
+
+#featured {
+  font-family: "code_next-trialbook";
+  margin-left: 58px;
   color: white;
   text-shadow: 1.5px 0px white;
   font-weight: bold;
-  /* border: 3px solid white; */
   width: 100px;
   cursor: default;
-  z-index: 30;
 }
 
-section h1:hover {
+#featured:hover {
   text-shadow: none;
   font-weight: normal;
 }
 
 .project-container {
-  width: 1200px;
+  width: 80%;
   margin: auto;
-}
-
-.project-container:first-child {
-  /* width: 1200px; */
-  /* margin: auto; */
-  margin-left: 300px;
+  max-width: 1200px;
 }
 
 .first-project-container {
   display: grid;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 40% 60%;
   border-radius: 10px;
-  width: 100%;
-  margin-left: 21%;
-  padding-top: 50px;
 }
 
-.first-project-container p {
-  border: 5px solid white;
+.project-description {
+  color: white;
+  text-align: right;
+  border-radius: 10px;
+  cursor: default;
+}
+
+.project-description p:first-child {
+  font-size: x-large;
+  font-style: bold;
+  letter-spacing: 10px;
+}
+
+.project-description p:nth-child(5) {
+  letter-spacing: 5px;
+  text-align: right;
+  font-size: large;
+  font-style: bold;
+  text-shadow: 0.5px 0px white;
+}
+
+.first-project-container a {
   margin: auto;
-  height: 97%;
-  width: 90%;
-  background: white;
-  border-radius: 10px;
 }
 
-.first-project-container a img {
+/* .first-project-container a img {
   border-radius: 10px;
   width: 100%;
   height: 100%;
+  margin: auto;
+  margin-left: 50px;
+} */
+
+.project-img {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  margin-left: 50px;
 }
 
 .second-project-container {
   display: grid;
   grid-template-columns: 70% 30%;
   border-radius: 10px;
-  width: 1200px;
-  margin-left: -21%;
+  width: 100%;
+  margin: auto;
   padding-top: 50px;
 }
 
 .second-project-container p {
-  border: 5px solid white;
+  /* border: 5px solid white; */
   margin: auto;
   height: 97%;
   width: 90%;
@@ -532,9 +553,11 @@ section h1:hover {
   display: grid;
   grid-template-columns: 30% 70%;
   border-radius: 10px;
-  width: 1200px;
-  margin-left: 21%;
+  width: 100%;
+  margin: auto;
+  /* margin-left: 21%; */
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .third-project-container p {
@@ -556,4 +579,81 @@ footer {
   /* border: 10px solid black; */
   height: 1000px;
   background-color: white;
+}
+
+@media all and (max-width: 1400px) {
+  html {
+    width: 100%;
+  }
+  section {
+    width: 100%;
+    /* background: green; */
+  }
+
+  #featured {
+    margin-left: 58px;
+  }
+  .first-project-container {
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    height: 100%;
+    /* width: 850px; */
+    padding: 5px;
+    margin: auto;
+    /* background: white; */
+  }
+
+  .product-description {
+    /* margin: auto; */
+    background: white;
+    /* width: 850px; */
+    width: 100%;
+    height: 100%;
+  }
+
+  .first-project-container a img {
+    width: 100%;
+    margin: auto;
+  }
+}
+
+@media all and (max-width: 900px) {
+  section {
+    /* border: 4px solid white; */
+    border: 0;
+    /* width: 100%; */
+    height: 100%;
+    margin: auto;
+    /* margin-left: 0; */
+    /* margin-right: 0; */
+  }
+
+  #featured {
+    margin-left: 58px;
+  }
+  .project-container {
+    position: relative;
+    /* width: 100%; */
+    /* border: 4px solid white; */
+  }
+
+  .first-project-container {
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+    margin: auto;
+  }
+  .project-description {
+    /* line-height: 0; */
+    width: 100%;
+    margin: auto;
+    /* letter-spacing: 0px; */
+    margin-bottom: 80px;
+  }
+
+  .first-project-container a img {
+    width: 100%;
+  }
 }

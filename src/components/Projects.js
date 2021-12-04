@@ -7,23 +7,41 @@ const Projects = () => {
       <h1 id="featured">.featured projects.</h1>
       <div className="project-container">
         <div className="first-project-container">
-          <p>PARADIGM GUITAR ECOMMERCE WEBSITE .nov.20.2021</p>
+          <div className="project-description">
+            <p>PARADIGM GUITAR</p>
+            <hr />
+            <p>e-commerce website</p>
+            <p>
+              A website to promote the brandings of a local boutique guitar
+              store.
+            </p>
+            <p>TECHNOLOGIES USED:</p>
+
+            <p>
+              MongoDB, Express.js, React.js, Node.js, <br /> Amazon S3, Amazon
+              EC2, NGINX
+            </p>
+            <p>
+              Using the MVC architecture, this website is deployed on Amazon's
+              EC2 cloud server with NGINX as the web server.
+            </p>
+          </div>
           <a href="#/paradigmguitar">
-            <img src={PG} alt="" />
+            <img className="project-img" src={PG} alt="" />
           </a>
         </div>
-        <div className="second-project-container">
+        {/* <div className="second-project-container">
           <a href="#/paradigmguitar">
             <img src={PG} alt="" />
           </a>
           <p>this is my second project</p>
-        </div>
-        <div className="third-project-container">
+        </div> */}
+        {/* <div className="third-project-container">
           <p>this is my third project</p>
           <a href="#/paradigmguitar">
             <img src={PG} alt="" />
           </a>
-        </div>
+        </div> */}
       </div>
     </section>
   );

@@ -12,7 +12,7 @@ const Main = () => {
         </div>
       </div>
       <div className="arrow-container">
-        <div id="section06">
+        <div id="down">
           <a href="#featured">
             <span></span>
           </a>
