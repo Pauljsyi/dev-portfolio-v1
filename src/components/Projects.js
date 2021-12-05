@@ -1,5 +1,7 @@
 import React from "react";
 import PG from "../assets/Project-Img/Paradigm-Guitar/PG-landingpage.png";
+import Carousel from "./helpers/Carousel";
+import { ParadigmData } from "./helpers/ParadigmData";
 
 const Projects = () => {
   return (
@@ -8,7 +10,10 @@ const Projects = () => {
       <div className="project-container">
         <div className="first-project-container">
           <div className="project-description">
-            <p>PARADIGM GUITAR</p>
+            <a href="#/www.paradigmguitar.com">
+              <p>PARADIGM GUITAR</p>
+            </a>
+
             <hr />
             <p>e-commerce website</p>
             <p>
@@ -25,10 +30,11 @@ const Projects = () => {
               Using the MVC architecture, this website is deployed on Amazon's
               EC2 cloud server with NGINX as the web server.
             </p>
+            <p>check it out !</p>
           </div>
-          <a href="#/paradigmguitar">
-            <img className="project-img" src={PG} alt="" />
-          </a>
+
+          <Carousel slides={ParadigmData} />
+          {/* <img className="project-img" src={PG} alt="" /> */}
         </div>
         {/* <div className="second-project-container">
           <a href="#/paradigmguitar">
