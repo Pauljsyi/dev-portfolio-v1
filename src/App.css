@@ -181,21 +181,17 @@ html {
 }
 
 body {
-  /* background: rgba(0, 0, 0, 0.1); */
-  /* position: absolute; */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  /* left: 25%; */
-  /* width: 100%; */
-  /* height: 1000px;s */
+  /* width: 1200px; */
   margin: auto;
   z-index: 0;
 }
 
 .App {
-  /* border: 10px solid white; */
-  width: 100%;
+  border: 10px solid white;
+  width: 1200px;
   margin: auto;
 }
 
@@ -207,7 +203,7 @@ nav {
 }
 
 .nav-container {
-  width: 1920px;
+  width: 1200px;
   margin: auto;
   display: flex;
   align-items: center;
@@ -450,17 +446,11 @@ section {
   width: 100%;
   height: 100%;
   margin: auto;
-  display: grid;
   max-width: 1200px;
 }
 
 #featured {
-  margin-left: 58px;
-}
-
-#featured {
   font-family: "code_next-trialbook";
-  margin-left: 58px;
   color: white;
   text-shadow: 1.5px 0px white;
   font-weight: bold;
@@ -474,7 +464,7 @@ section {
 }
 
 .project-container {
-  width: 90%;
+  width: 100%;
   margin: auto;
   max-width: 1200px;
   user-select: none;
@@ -482,8 +472,9 @@ section {
 
 .first-project-container {
   display: grid;
-  grid-template-columns: 40% 70%;
+  grid-template-columns: 40% 60%;
   border-radius: 10px;
+
   /* border: 3px solid white; */
 }
 
@@ -520,18 +511,24 @@ section {
   margin: auto;
 }
 
+.carousel-container {
+  /* border: 5px solid white; */
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel {
+  /* width: 90%; */
+  width: 100%;
+  position: relative;
+}
+
 .project-img {
   /* border-radius: 10px; */
   width: 100%;
   /* height: auto; */
   /* margin: auto; */
 }
-
-.carousel {
-  width: 90%;
-  position: relative;
-}
-
 .arr-container {
   position: absolute;
   width: 100%;
@@ -574,7 +571,7 @@ section {
   transition: 0.5s;
 }
 
-.second-project-container {
+/* .second-project-container {
   display: grid;
   grid-template-columns: 70% 30%;
   border-radius: 10px;
@@ -584,7 +581,7 @@ section {
 }
 
 .second-project-container p {
-  /* border: 5px solid white; */
+  border: 5px solid white;
   margin: auto;
   height: 97%;
   width: 90%;
@@ -604,7 +601,7 @@ section {
   border-radius: 10px;
   width: 100%;
   margin: auto;
-  /* margin-left: 21%; */
+  margin-left: 21%;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -622,6 +619,15 @@ section {
   border-radius: 10px;
   width: 100%;
   height: 100%;
+} */
+
+/* ABOUT STYLES */
+
+article {
+  color: white;
+  width: 1200px;
+  margin: auto;
+  border: 5px solid white;
 }
 
 footer {
@@ -630,15 +636,12 @@ footer {
   background-color: white;
 }
 
-@media all and (max-width: 1400px) {
+/* @media all and (max-width: 1400px) {
   html {
     width: 100%;
   }
   section {
-    /* width: 700px; */
-    width: 800px;
     height: 100%;
-    /* background: green; */
   }
 
   .carousel {
@@ -647,18 +650,13 @@ footer {
   }
 
   .arr-container {
-    /* border: 2px solid white; */
     position: absolute;
-    /* width: 545px; */
     width: 100%;
     top: 40%;
     display: flex;
     justify-content: space-between;
   }
 
-  #featured {
-    margin-left: 58px;
-  }
   .first-project-container {
     grid-template-columns: 100%;
     grid-template-rows: 50% 50%;
@@ -666,41 +664,51 @@ footer {
     width: 100%;
     padding: 5px;
     margin: auto;
-    /* background: white; */
   }
 
   .product-description {
-    /* margin: auto; */
     background: white;
-    /* width: 850px; */
+
     width: 100%;
     height: 100%;
-    /* margin-bottom: 150px; */
   }
 
   .first-project-container a img {
-    /* margin-top: 100px; */
     width: 100%;
     margin: auto;
   }
-}
+} */
 
-@media all and (max-width: 1100px) {
+@media all and (max-width: 1200px) {
+  .App {
+    width: 90%;
+  }
+
+  article {
+    width: 100%;
+  }
   section {
-    border: 4px solid white;
-    border: 0;
-    width: 800px;
+    /* border: 4px solid white; */
+    /* width: 800px; */
+    width: 100%;
     height: 100%;
     margin: auto;
     /* margin-left: 0; */
     /* margin-right: 0; */
   }
 
+  .carousel-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
   .carousel {
     /* margin-top: -100px; */
     /* border: 4px solid purple; */
-    height: 50px;
-    width: 600px;
+    height: 100%;
+    width: 70%;
+    overflow: hidden;
     /* width: 100%; */
     position: relative;
   }
@@ -720,9 +728,6 @@ footer {
     justify-content: space-between;
   }
 
-  #featured {
-    margin-left: 58px;
-  }
   .project-container {
     position: relative;
     width: 100%;
@@ -730,8 +735,8 @@ footer {
   }
 
   .first-project-container {
-    grid-template-columns: 80%;
-    grid-template-rows: 300px 300px;
+    grid-template-columns: 100%;
+    grid-template-rows: 400px 200px;
     height: 100%;
     width: 100%;
 
@@ -739,23 +744,34 @@ footer {
   }
   .project-description {
     /* border: 4px solid white; */
-    width: 100%;
+    width: 70%;
     height: 100%;
     margin: auto;
   }
 }
 
-@media all and (max-width: 900px) {
+/* @media all and (max-width: 900px) {
+  .App {
+    width: 90%;
+  }
   section {
-    width: 500px;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+  }
+  .carousel-container {
+    height: 100%;
+    width: 100%;
   }
   .carousel {
-    margin-top: -100px;
-    /* border: 4px solid purple; */
-    height: 100px;
-    width: 450px;
+    height: 100%;
+    width: 100%;
 
     position: relative;
+  }
+
+  .project-img {
+    width: 100%;
   }
 
   .arr-container {
@@ -767,20 +783,16 @@ footer {
     justify-content: space-between;
   }
 
-  .project-description {
-    width: 450px;
-  }
-
-  .project-img {
-    width: 100%;
-    height: 100%;
-  }
-
   .first-project-container {
-    grid-template-columns: 400px;
-    grid-template-rows: 500px 500px;
-    height: 700px;
-    width: 100%;
-    /* margin: auto; */
+    grid-template-columns: 100%;
+    grid-template-rows: 350px 500px;
+    height: 50%;
+    margin: auto;
   }
-}
+
+  .project-description {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+  }
+} */

@@ -32,8 +32,10 @@ const Projects = () => {
             </p>
             <p>check it out !</p>
           </div>
+          <div className="carousel-container">
+            <Carousel slides={ParadigmData} />
+          </div>
 
-          <Carousel slides={ParadigmData} />
           {/* <img className="project-img" src={PG} alt="" /> */}
         </div>
         {/* <div className="second-project-container">
