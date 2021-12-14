@@ -1,24 +1,32 @@
 import React from "react";
+// import PropTypes from "prop-types";
+
 // import Picklogo from "../assets/pick-white-transparent.png";
 // import Picklogo from "../assets/JSlogo.png";
-import Picklogo from "../assets/PYlogo.png";
+import py from "../assets/paullogoblack.png";
+// import py from "../assets/paul-yi-logo-roundedwhite.png";
+import js from "../assets/paul-yi-logo-js-white.png";
+
 // import Picklogo from "../assets/JSlogo2.png";
 // import Picklogo from "../assets/JSlogo-white.png";
 // import { Link } from "react-router-dom";
 // import Picklogo from "../assets/saveforweb-pick.png";
 import { Github, Linkedin, Facebook, Instagram } from "react-bootstrap-icons";
+import Logos from "./helpers/Logos";
 
 const Header = () => {
+  Logos();
   return (
     <nav>
       <div className="nav-container">
-        <a href="/">
-          <img className="logo-img" src={Picklogo} alt="logo" />
-        </a>
+        <div className="logo1">
+          <img className="logo-img1" id="img1" src={py} alt="logo" />
+          <img className="logo-img2" id="img2" src={js} alt="logo" />
+        </div>
 
         <div className="link-container">
           <li className="navlinks">
-            <a className="links" href="#featured">
+            <a className="links" href="#section-container">
               .projects
               <hr />
             </a>
@@ -26,7 +34,7 @@ const Header = () => {
             {/* <a className="links" href="/#">
               .work
             </a> */}
-            <a className="links" href="/#">
+            <a className="links" href="#about">
               .about
               <hr />
             </a>

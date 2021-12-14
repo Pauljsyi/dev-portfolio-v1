@@ -5,7 +5,7 @@ import { ParadigmData } from "./helpers/ParadigmData";
 
 const Projects = () => {
   return (
-    <section>
+    <section className="section-container" id="section-container">
       <h1 id="featured">.featured projects.</h1>
       <div className="project-container">
         <div className="first-project-container">
