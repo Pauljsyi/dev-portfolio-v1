@@ -1,8 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import Animation from "./helpers/Animation";
 
 const Main = () => {
   Animation();
+
+  const [delay, setDelay] = useState();
+
+  const linkdelay = (e) => {
+    e.preventDefault();
+    setTimeout(() => {
+      console.log("2 sec link delay success!");
+      window.location.href = "/#about";
+    }, 1300);
+  };
 
   return (
     <main>
@@ -29,7 +39,7 @@ const Main = () => {
               className="special-characters"
               id="specialc"
               href="#about"
-              // onClick={alert("click")}
+              onClick={linkdelay}
               // href="javascript:setTimeout(() => {window.location = '#about'}, 1000)"
             >
               <div className="letter" id="special">
@@ -82,15 +92,10 @@ const Main = () => {
           </div>
         </div>
       </div>
-      <div className="arrow-container">
-        <div id="down">
-          <a href="#about">
-            <span></span>
-          </a>
-        </div>
-        {/* <a id="featured-link" href="#featured">
-          <p>FEATURED</p>
-        </a> */}
+      <div id="down">
+        <a href="#about">
+          <span></span>
+        </a>
       </div>
     </main>
   );

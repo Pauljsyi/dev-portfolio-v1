@@ -11,6 +11,8 @@ import js from "../assets/paul-yi-logo-js-white.png";
 // import Picklogo from "../assets/JSlogo-white.png";
 // import { Link } from "react-router-dom";
 // import Picklogo from "../assets/saveforweb-pick.png";
+import { Route, Routes, Link } from "react-router-dom";
+
 import { Github, Linkedin, Facebook, Instagram } from "react-bootstrap-icons";
 import Logos from "./helpers/Logos";
 
@@ -19,14 +21,19 @@ const Header = () => {
   return (
     <nav>
       <div className="nav-container">
-        <div className="logo1">
+        <Link className="logo1" to="/">
           <img className="logo-img1" id="img1" src={py} alt="logo" />
           <img className="logo-img2" id="img2" src={js} alt="logo" />
-        </div>
+        </Link>
+
+        {/* <div className="logo2">
+          
+          <img className="logo-img2" id="img2" src={js} alt="logo" />
+        </div> */}
 
         <div className="link-container">
           <li className="navlinks">
-            <a className="links" href="#section-container">
+            <a className="links" href="#projects">
               .projects
               <hr />
             </a>
