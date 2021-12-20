@@ -364,8 +364,11 @@ main {
 }
 
 #skills-title {
-  margin-top: 80px;
+  position: absolute;
+
+  margin: 0;
   text-align: center;
+  margin-top: 80px;
 }
 
 .special-characters {
@@ -470,6 +473,7 @@ main {
   border-radius: 10px;
   cursor: default;
   padding-right: 15px;
+  font-size: large;
 }
 
 .project-description a {
@@ -618,6 +622,7 @@ article {
   color: white;
   width: 1200px;
   margin: auto;
+  font-size: x-large;
 
   /* display: flex; */
   /* margin-top: 250px; */
@@ -625,9 +630,9 @@ article {
   /* border: 5px solid white;s */
 }
 
-/* #about-text {
-  height: 50px;
-} */
+#about-text {
+  margin: auto;
+}
 
 #about-container {
   /* margin-top: 250px; */
@@ -762,6 +767,7 @@ article {
     height: 100%;
     margin: auto;
   }
+
   .skills-container {
     /* border: 5px solid white; */
     width: 100%;
@@ -787,6 +793,17 @@ article {
 @media all and (max-width: 1000px) {
   #skills-flex {
     flex-direction: column;
+    padding-top: 75px;
+  }
+
+  #about-container {
+    margin-bottom: 100px;
+  }
+
+  .s-container h1 {
+    margin: auto;
+    width: 80%;
+    text-align: center;
   }
 }
 
@@ -799,16 +816,34 @@ article {
    ======*/
 
 .s-container {
-  /* border: 5px solid white; */
-  /* width: 1200px; */
   margin: auto;
   color: white;
+  width: 90%;
+}
+
+.s-container h2 {
+  /* margin: auto; */
+  width: 110px;
+  text-align: left;
+  margin-top: 50px;
+
+  font-family: "code_next-trialbook";
+  color: white;
+  text-shadow: 1.5px 0px white;
+  font-weight: bold;
+  /* width: 100px; */
+  cursor: default;
+}
+
+.s-container h2:hover {
+  text-shadow: none;
 }
 
 #skills-flex {
   display: flex;
 
   justify-content: space-evenly;
+  margin-top: 150px;
   width: 90%;
   margin: auto;
 }
@@ -893,17 +928,18 @@ article {
 
 #skills-title {
   /* border: 5px solid white; */
-  margin-bottom: 100px;
+  /* margin-bottom: 100px; */
 }
 
 .skill-expand {
   /* transform-origin: center; */
-  stroke: white;
+  stroke: rgb(129, 106, 172);
   stroke-miterlimit: 10;
-  opacity: 0.5;
+  stroke-width: 3px;
+  /* opacity: 0.1; */
   z-index: 500;
-  /* fill: #591b7270; */
-  fill: white;
+  fill: none;
+  /* fill: white; */
 }
 
 #layer_1 {
@@ -915,11 +951,11 @@ article {
 .cls-2,
 .cls-3,
 .cls-4 {
-  stroke: white;
+  /* stroke: white; */
   stroke-miterlimit: 10;
 }
 .cls-1 {
-  fill: #591b7270;
+  fill: rgba(83, 58, 127, 0.5);
 }
 .cls-2,
 .cls-3 {
@@ -927,12 +963,12 @@ article {
 }
 .cls-2 {
   opacity: 0.5;
-  fill: black;
+  fill: rgba(83, 58, 127, 0.6);
 }
 .cls-3 {
   opacity: 0.7;
-  fill: #591b7270;
+  fill: rgba(83, 58, 127, 0.8);
 }
 .cls-4 {
-  fill: black;
+  fill: rgba(83, 58, 127, 1);
 }

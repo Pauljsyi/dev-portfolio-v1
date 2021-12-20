@@ -25,24 +25,15 @@ const Skills = () => {
   // });
   return (
     <div className="s-container">
-      <h1 id="skills-title">My Skills.</h1>
+      <h2>.my skills</h2>
       <div id="skills-flex">
         <div className="morph-container">
           <div className="skills-cat-container">
             <h3>HTML</h3>
             <h3>Javascript</h3>
-            <h3>
-              MongoDB/
-              <br />
-              Mongoose.js
-            </h3>
+            <h3>MongoDB</h3>
             <h3>React</h3>
-
-            <h3>
-              Node.js/
-              <br />
-              Express.js
-            </h3>
+            <h3>Node.js</h3>
             <h3>CSS/SCSS</h3>
           </div>
           <svg
