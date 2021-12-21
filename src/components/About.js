@@ -9,7 +9,7 @@ const About = () => {
           <img
             className="about-img"
             src={TroyGuitar}
-            alt="Paul playing guitar with dog"
+            alt="Paul playing guitar with Troy"
           />
         </div>
         <div id="about-text">

@@ -135,7 +135,7 @@
 }
 
 html {
-  background-color: black;
+  background-color: rgb(34, 34, 34);
   font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
   font-family: "poppinsbold";
   font-family: "poppinsextralight";
@@ -145,7 +145,7 @@ html {
 }
 
 body {
-  background-color: black;
+  background-color: rgb(34, 34, 34);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -618,35 +618,31 @@ main {
 } */
 
 article {
-  /* border: 5px solid white; */
   color: white;
   width: 1200px;
   margin: auto;
   font-size: x-large;
-
-  /* display: flex; */
-  /* margin-top: 250px; */
-  /* margin-bottom: 250px; */
-  /* border: 5px solid white;s */
 }
 
 #about-text {
   margin: auto;
 }
+#about-text h1 {
+  text-shadow: 2px 0px white;
+  width: 200px;
+  cursor: default;
+}
+
+#about-text h1:hover {
+  text-shadow: none;
+}
 
 #about-container {
-  /* margin-top: 250px; */
-  /* border: 5px solid purple; */
   display: flex;
-
-  /* font-family: "ClementePDac-ExtraLight"; */
-  /* line-height: 30px; */
-  /* margin-top: 250px; */
   margin-bottom: 0;
 }
 
 .about-img {
-  /* border: 5px solid white; */
   border-radius: 10px;
   width: 400px;
   margin: 50px;
@@ -655,161 +651,6 @@ article {
 #about-img-container {
   border-radius: 10px;
 }
-
-/* @media all and (max-width: 1400px) {
-  html {
-    width: 100%;
-  }
-  section {
-    height: 100%;
-  }
-
-  .carousel {
-    width: 100%;
-    position: relative;
-  }
-
-  .arr-container {
-    position: absolute;
-    width: 100%;
-    top: 40%;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .first-project-container {
-    grid-template-columns: 100%;
-    grid-template-rows: 50% 50%;
-    height: 100%;
-    width: 100%;
-    padding: 5px;
-    margin: auto;
-  }
-
-  .product-description {
-    background: white;
-
-    width: 100%;
-    height: 100%;
-  }
-
-  .first-project-container a img {
-    width: 100%;
-    margin: auto;
-  }
-} */
-
-@media all and (max-width: 1440px) {
-  .App {
-    width: 90%;
-  }
-
-  article {
-    width: 100%;
-  }
-  .projects {
-    width: 100%;
-    height: 100%;
-    margin: auto;
-  }
-
-  .carousel-container {
-    /* border: 5px solid white; */
-    width: 70%;
-    height: 100%;
-    overflow: hidden;
-    margin: auto;
-  }
-
-  #about-container {
-    display: block;
-  }
-
-  .carousel {
-    /* border: 4px solid purple; */
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-
-    /* position: relative; */
-  }
-
-  .project-img {
-    width: 100%;
-    height: 100%;
-  }
-
-  .arr-container {
-    /* border: 2px solid white; */
-    position: absolute;
-    width: 100%;
-    height: 100%;
-
-    top: 0px;
-
-    justify-content: space-between;
-  }
-
-  .project-container {
-    position: relative;
-    width: 100%;
-  }
-
-  .first-project-container {
-    grid-template-columns: 100%;
-    height: 100%;
-    width: 100%;
-
-    margin: auto;
-  }
-  .project-description {
-    width: 70%;
-    height: 100%;
-    margin: auto;
-  }
-
-  .skills-container {
-    /* border: 5px solid white; */
-    width: 100%;
-    max-width: 700px;
-    margin: auto;
-    color: white;
-
-    grid-template-columns: 50% 50%;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 100px;
-    margin-bottom: 100px;
-  }
-  .skills {
-    width: 100%;
-  }
-
-  /* #skills-flex {
-    flex-direction: column;
-  } */
-}
-
-@media all and (max-width: 1000px) {
-  #skills-flex {
-    flex-direction: column;
-    padding-top: 75px;
-  }
-
-  #about-container {
-    margin-bottom: 100px;
-  }
-
-  .s-container h1 {
-    margin: auto;
-    width: 80%;
-    text-align: center;
-  }
-}
-
-/* .container {
-  position: relative;
-} */
 
 /* ======
    SKILLS
@@ -857,7 +698,7 @@ article {
   display: grid;
   grid-template-columns: 50% 50%;
   /* justify-content: space-around;
-  align-items: center; */
+    align-items: center; */
   margin-top: 100px;
   margin-bottom: 100px;
   min-width: 400px;
@@ -971,4 +812,112 @@ article {
 }
 .cls-4 {
   fill: rgba(83, 58, 127, 1);
+}
+
+@media all and (max-width: 1440px) {
+  .App {
+    width: 90%;
+  }
+
+  article {
+    width: 100%;
+  }
+  .projects {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+  }
+
+  .carousel-container {
+    /* border: 5px solid white; */
+    width: 70%;
+    height: 100%;
+    overflow: hidden;
+    margin: auto;
+  }
+
+  #about-container {
+    display: block;
+  }
+
+  .carousel {
+    /* border: 4px solid purple; */
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+
+    /* position: relative; */
+  }
+
+  .project-img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .arr-container {
+    /* border: 2px solid white; */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    top: 0px;
+
+    justify-content: space-between;
+  }
+
+  .project-container {
+    position: relative;
+    width: 100%;
+  }
+
+  .first-project-container {
+    grid-template-columns: 100%;
+    height: 100%;
+    width: 100%;
+
+    margin: auto;
+  }
+  .project-description {
+    width: 70%;
+    height: 100%;
+    margin: auto;
+  }
+
+  .skills-container {
+    /* border: 5px solid white; */
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    color: white;
+
+    grid-template-columns: 50% 50%;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .skills {
+    width: 100%;
+  }
+
+  /* #skills-flex {
+    flex-direction: column;
+  } */
+}
+
+@media all and (max-width: 1000px) {
+  #skills-flex {
+    flex-direction: column;
+    padding-top: 75px;
+  }
+
+  #about-container {
+    margin-bottom: 100px;
+  }
+
+  .s-container h1 {
+    margin: auto;
+    width: 80%;
+    text-align: center;
+  }
 }
