@@ -3,8 +3,8 @@ import React from "react";
 
 // import Picklogo from "../assets/pick-white-transparent.png";
 // import Picklogo from "../assets/JSlogo.png";
-import py from "../assets/paullogoblack.png";
-// import py from "../assets/paul-yi-logo-roundedwhite.png";
+// import py from "../assets/paullogoblack.png";
+import py from "../assets/paul-yi-logo-roundedwhite.png";
 import js from "../assets/paul-yi-logo-js-white.png";
 
 // import Picklogo from "../assets/JSlogo2.png";
@@ -32,20 +32,20 @@ const Header = () => {
         </div> */}
 
         <div className="link-container">
-          <li className="navlinks">
+          {/* <li className="navlinks">
             <a className="links" href="#projects">
               .projects
               <hr />
             </a>
 
-            {/* <a className="links" href="/#">
+            <a className="links" href="#skill">
               .work
-            </a> */}
+            </a>
             <a className="links" href="#about">
               .about
               <hr />
             </a>
-          </li>
+          </li> */}
           <li className="social-nav">
             <a className="nav-icons" href="https://www.github.com/pauljsyi">
               <Github color="black" font-size="30px" />

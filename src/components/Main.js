@@ -6,18 +6,26 @@ const Main = () => {
 
   const [delay, setDelay] = useState();
 
-  const linkdelay = (e) => {
+  const linkdelay1 = (e) => {
     e.preventDefault();
     setTimeout(() => {
-      console.log("2 sec link delay success!");
-      window.location.href = "/#about";
+      // console.log("2 sec link delay success!");
+      // window.location.href = "/#about";
+    }, 1300);
+  };
+
+  const linkdelay2 = (e) => {
+    e.preventDefault();
+    setTimeout(() => {
+      // console.log("2 sec link delay success!");
+      // window.location.href = "/#featured";
     }, 1300);
   };
 
   return (
     <main>
       <div className="objective">
-        <div className="circle"></div>
+        {/* <div className="circle"></div> */}
         <div className="intro-container">
           <div className="greetings" id="greetings">
             <div className="letter">.</div>
@@ -38,8 +46,8 @@ const Main = () => {
             <a
               className="special-characters"
               id="specialc"
-              href="#about"
-              onClick={linkdelay}
+              // href="#about"
+              onClick={linkdelay1}
               // href="javascript:setTimeout(() => {window.location = '#about'}, 1000)"
             >
               <div className="letter" id="special">
@@ -73,21 +81,53 @@ const Main = () => {
             <div className="letter">c</div>
             <div className="letter">k</div>
             <div className="space"> </div>
-            <a href="#featured">
-              <div className="letter">w</div>
-              <div className="letter">e</div>
-              <div className="letter">b</div>
-              <div className="space"> </div>
-              <div className="letter">d</div>
-              <div className="letter">e</div>
-              <div className="letter">v</div>
-              <div className="letter">e</div>
-              <div className="letter">l</div>
-              <div className="letter">o</div>
-              <div className="letter">p</div>
-              <div className="letter">e</div>
-              <div className="letter">r</div>
-              <div className="letter">.</div>
+            <a
+              id="wdev"
+              // href="#featured"
+              onClick={linkdelay2}
+            >
+              <div className="letter" id="job-title">
+                w
+              </div>
+              <div className="letter" id="job-title">
+                e
+              </div>
+              <div className="letter" id="job-title">
+                b
+              </div>
+              <div className="letter" id="job-title">
+                -
+              </div>
+              <div className="letter" id="job-title">
+                d
+              </div>
+              <div className="letter" id="job-title">
+                e
+              </div>
+              <div className="letter" id="job-title">
+                v
+              </div>
+              <div className="letter" id="job-title">
+                e
+              </div>
+              <div className="letter" id="job-title">
+                l
+              </div>
+              <div className="letter" id="job-title">
+                o
+              </div>
+              <div className="letter" id="job-title">
+                p
+              </div>
+              <div className="letter" id="job-title">
+                e
+              </div>
+              <div className="letter" id="job-title">
+                r
+              </div>
+              <div className="letter" id="job-title">
+                .
+              </div>
             </a>
           </div>
         </div>

@@ -31,23 +31,39 @@ const Animation = () => {
   });
 
   document.addEventListener("DOMContentLoaded", () => {
-    //#greetings
-
-    // let link = document.querySelector(".intro");
-
-    document.querySelector(".intro").addEventListener("click", () => {
-      // console.log("click");
-      // let letter = link.querySelectorAll("#special");
+    document.querySelector(".intro").addEventListener("mouseover", () => {
       anime
         .timeline({
           targets: "#special",
+          easing: "easeInExpo",
+          delay: (el, i) => 20 * i,
+        })
+        .add({
+          translateX: [0, -30],
+          opacity: [1, 0],
+          duration: 1000,
+          easing: "easeInExpo",
+        })
+        .add({
+          translateX: [40, 0],
+          opacity: [0, 1],
+          easing: "easeOutExpo",
+        });
+    });
+  });
+
+  document.addEventListener("DOMContentLoaded", () => {
+    document.querySelector("#brief").addEventListener("mouseover", () => {
+      anime
+        .timeline({
+          targets: "#job-title",
           easing: "easeInExpo",
           delay: (el, i) => 30 * i,
         })
         .add({
           translateX: [0, -30],
           opacity: [1, 0],
-          duration: 500,
+          duration: 1000,
           easing: "easeInExpo",
         })
         .add({

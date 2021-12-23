@@ -24,7 +24,7 @@ const Skills = () => {
   //   scale: 1,
   // });
   return (
-    <div className="s-container">
+    <div className="s-container" id="skill">
       <h2>.my skills</h2>
       <div id="skills-flex">
         <div className="morph-container">
