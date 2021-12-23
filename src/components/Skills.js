@@ -25,8 +25,8 @@ const Skills = () => {
   // });
   return (
     <div className="s-container" id="skill">
-      <h2>.my skills</h2>
       <div id="skills-flex">
+        <h2>.my skills</h2>
         <div className="morph-container">
           <div className="skills-cat-container">
             <h3>HTML</h3>

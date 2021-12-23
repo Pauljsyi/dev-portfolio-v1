@@ -36,12 +36,12 @@ const Animation = () => {
         .timeline({
           targets: "#special",
           easing: "easeInExpo",
-          delay: (el, i) => 20 * i,
+          delay: (el, i) => 30 * i,
         })
         .add({
           translateX: [0, -30],
           opacity: [1, 0],
-          duration: 1000,
+          duration: 300,
           easing: "easeInExpo",
         })
         .add({
@@ -63,7 +63,7 @@ const Animation = () => {
         .add({
           translateX: [0, -30],
           opacity: [1, 0],
-          duration: 1000,
+          duration: 300,
           easing: "easeInExpo",
         })
         .add({

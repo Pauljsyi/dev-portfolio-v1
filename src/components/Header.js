@@ -32,7 +32,7 @@ const Header = () => {
         </div> */}
 
         <div className="link-container">
-          {/* <li className="navlinks">
+          <li className="navlinks">
             <a className="links" href="#projects">
               .projects
               <hr />
@@ -45,22 +45,22 @@ const Header = () => {
               .about
               <hr />
             </a>
-          </li> */}
+          </li>
           <li className="social-nav">
             <a className="nav-icons" href="https://www.github.com/pauljsyi">
-              <Github color="black" font-size="30px" />
+              <Github color="white" font-size="50px" />
             </a>
             <a
               className="nav-icons"
               href="https://www.linkedin.com/in/pauljsyi"
             >
-              <Linkedin color="black" font-size="30px" />
+              <Linkedin color="white" font-size="50px" />
             </a>
             <a className="nav-icons" href="https://www.facebook.com/pauljsyi">
-              <Facebook color="black" font-size="30px" />
+              <Facebook color="white" font-size="50px" />
             </a>
             <a className="nav-icons" href="https://www.instagram.com/mrpaulyi">
-              <Instagram color="black" font-size="30px" />
+              <Instagram color="white" font-size="50px" />
             </a>
           </li>
         </div>
