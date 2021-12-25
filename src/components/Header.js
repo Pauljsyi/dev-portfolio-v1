@@ -40,6 +40,7 @@ const Header = () => {
 
             <a className="links" href="#skill">
               .work
+              <hr />
             </a>
             <a className="links" href="#about">
               .about
