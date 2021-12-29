@@ -33,37 +33,36 @@ const Header = () => {
 
         <div className="link-container">
           <li className="navlinks">
-            <a className="links" href="#projects">
-              .projects
-              <hr />
-            </a>
-
-            <a className="links" href="#skill">
-              .work
-              <hr />
-            </a>
             <a className="links" href="#about">
               .about
-              <hr />
+              {/* <hr /> */}
+            </a>
+            <a className="links" href="#skill">
+              .skills
+              {/* <hr /> */}
+            </a>
+            <a className="links" href="#projects">
+              .projects
+              {/* <hr /> */}
             </a>
           </li>
-          <li className="social-nav">
+          {/* <li className="social-nav">
             <a className="nav-icons" href="https://www.github.com/pauljsyi">
-              <Github color="white" font-size="50px" />
+              <Github color="white" font-size="40px" />
             </a>
             <a
               className="nav-icons"
               href="https://www.linkedin.com/in/pauljsyi"
             >
-              <Linkedin color="white" font-size="50px" />
+              <Linkedin color="white" font-size="40px" />
             </a>
             <a className="nav-icons" href="https://www.facebook.com/pauljsyi">
-              <Facebook color="white" font-size="50px" />
+              <Facebook color="white" font-size="40px" />
             </a>
             <a className="nav-icons" href="https://www.instagram.com/mrpaulyi">
-              <Instagram color="white" font-size="50px" />
+              <Instagram color="white" font-size="40px" />
             </a>
-          </li>
+          </li> */}
         </div>
       </div>
     </nav>

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Animation from "./helpers/Animation";
+import { Github, Linkedin, Facebook, Instagram } from "react-bootstrap-icons";
 
 const Main = () => {
   Animation();
@@ -24,6 +25,20 @@ const Main = () => {
 
   return (
     <main>
+      <li className="social-nav">
+        <a className="nav-icons" href="https://www.github.com/pauljsyi">
+          <Github color="white" font-size="40px" />
+        </a>
+        <a className="nav-icons" href="https://www.linkedin.com/in/pauljsyi">
+          <Linkedin color="white" font-size="40px" />
+        </a>
+        <a className="nav-icons" href="https://www.facebook.com/pauljsyi">
+          <Facebook color="white" font-size="40px" />
+        </a>
+        <a className="nav-icons" href="https://www.instagram.com/mrpaulyi">
+          <Instagram color="white" font-size="40px" />
+        </a>
+      </li>
       <div className="objective">
         {/* <div className="circle"></div> */}
         <div className="intro-container">
