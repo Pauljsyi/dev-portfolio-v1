@@ -931,12 +931,11 @@ article {
   }
 
   .carousel-container {
-    /* border: 5px solid white; */
-    margin: 0;
     width: 70%;
     height: auto;
     overflow: hidden;
     margin: auto;
+    margin-top: 150px;
   }
 
   #about-container {
@@ -1002,8 +1001,8 @@ article {
     width: 100%;
   }
 
-  .skills-container {
-    /* border: 5px solid white; */
+  /* .skills-container {
+    border: 5px solid white;
     width: 100%;
     max-width: 700px;
     margin: auto;
@@ -1014,10 +1013,10 @@ article {
     align-items: center;
     margin-top: 100px;
     margin-bottom: 100px;
-  }
-  .skills {
+  } */
+  /* .skills {
     width: 100%;
-  }
+  } */
 
   /* #skills-flex {
     flex-direction: column;
