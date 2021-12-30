@@ -9,18 +9,12 @@ const Main = () => {
 
   const linkdelay1 = (e) => {
     e.preventDefault();
-    setTimeout(() => {
-      // console.log("2 sec link delay success!");
-      // window.location.href = "/#about";
-    }, 1300);
+    setTimeout(() => {}, 1300);
   };
 
   const linkdelay2 = (e) => {
     e.preventDefault();
-    setTimeout(() => {
-      // console.log("2 sec link delay success!");
-      // window.location.href = "/#featured";
-    }, 1300);
+    setTimeout(() => {}, 1300);
   };
 
   return (
@@ -40,7 +34,6 @@ const Main = () => {
         </a>
       </li>
       <div className="objective">
-        {/* <div className="circle"></div> */}
         <div className="intro-container">
           <div className="greetings" id="greetings">
             <div className="letter">.</div>
@@ -61,9 +54,7 @@ const Main = () => {
             <a
               className="special-characters"
               id="specialc"
-              // href="#about"
               onClick={linkdelay1}
-              // href="javascript:setTimeout(() => {window.location = '#about'}, 1000)"
             >
               <div className="letter" id="special">
                 p
@@ -96,11 +87,7 @@ const Main = () => {
             <div className="letter">c</div>
             <div className="letter">k</div>
             <div className="space"> </div>
-            <a
-              id="wdev"
-              // href="#featured"
-              onClick={linkdelay2}
-            >
+            <a id="wdev" onClick={linkdelay2}>
               <div className="letter" id="job-title">
                 w
               </div>

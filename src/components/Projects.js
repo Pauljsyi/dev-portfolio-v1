@@ -1,5 +1,4 @@
 import React from "react";
-import PG from "../assets/Project-Img/Paradigm-Guitar/PG-landingpage.png";
 import Carousel from "./helpers/Carousel";
 import { ParadigmData } from "./helpers/ParadigmData";
 
@@ -35,21 +34,7 @@ const Projects = () => {
           <div className="carousel-container">
             <Carousel slides={ParadigmData} />
           </div>
-
-          {/* <img className="project-img" src={PG} alt="" /> */}
         </div>
-        {/* <div className="second-project-container">
-          <a href="#/paradigmguitar">
-            <img src={PG} alt="" />
-          </a>
-          <p>this is my second project</p>
-        </div> */}
-        {/* <div className="third-project-container">
-          <p>this is my third project</p>
-          <a href="#/paradigmguitar">
-            <img src={PG} alt="" />
-          </a>
-        </div> */}
       </div>
     </section>
   );
