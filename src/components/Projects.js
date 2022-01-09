@@ -9,7 +9,7 @@ const Projects = () => {
       <div className="project-container">
         <div className="first-project-container">
           <div className="project-description">
-            <a href="www.paradigmguitar.pauljsyi.com">
+            <a href="http://www.paradigmguitar.pauljsyi.com/">
               <p>PARADIGM GUITAR</p>
             </a>
 
